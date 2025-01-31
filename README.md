@@ -19,31 +19,31 @@ The Music Generation App utilizes a Genetic Algorithm to create unique musical s
 Ensure you have the following dependencies installed:
 
 ```pip install click midiutil pyo```
-Code Structure
+**Code Structure**
 
-1. genetic.py
+**1. genetic.py**
 
-Contains the implementation of the genetic algorithm, including:
+    Contains the implementation of the genetic algorithm, including:
+    
+    Genome Representation: Encodes melodies as binary strings.
+    
+    Selection, Crossover, and Mutation: Implements single-point crossover and mutation.
+    
+    Fitness Function: Evaluates melodies based on user input.
+    
+    Evolution Process: Generates, selects, and optimizes melodies over multiple generations.
 
-Genome Representation: Encodes melodies as binary strings.
-
-Selection, Crossover, and Mutation: Implements single-point crossover and mutation.
-
-Fitness Function: Evaluates melodies based on user input.
-
-Evolution Process: Generates, selects, and optimizes melodies over multiple generations.
-
-2. mgen.py
-
-Handles melody generation and playback, including:
-
-Melody Representation: Converts genomes into musical notes.
-
-Event Sequences: Uses Pyo for audio playback.
-
-User Rating System: Allows user input to guide evolution.
-
-MIDI Export: Saves generated melodies to MIDI files.
+**2. mgen.py**
+    
+    Handles melody generation and playback, including:
+    
+    Melody Representation: Converts genomes into musical notes.
+    
+    Event Sequences: Uses Pyo for audio playback.
+    
+    User Rating System: Allows user input to guide evolution.
+    
+    MIDI Export: Saves generated melodies to MIDI files.
 
 How to Run
 
